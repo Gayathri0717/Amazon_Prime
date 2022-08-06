@@ -1,0 +1,262 @@
+.header {
+    background-color: #232F3E;
+    /* background-color:  #212d4a; */
+    margin: 0;
+    padding: 1px;
+    width: 100% !important;
+    height: 100% !important;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.logo {
+    color: white;
+    font-size: small;
+    margin-left: 45px;
+
+}
+
+.navbar_info {
+    /* font-size: x-large; */
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.navbar_info2 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.navbar_info3 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.navbar_info4 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.navbar_info5 {
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: larger;
+}
+
+.button {
+    border-radius: 7px;
+    width: 100%;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    height: 57%;
+    font-size: inherit;
+    margin: 18px;
+    background-color: #0f79af;
+    color: white;
+    border-color: #232F3E;
+}
+
+@media (max-width:800px) {
+    .header {
+        color: red;
+        flex-direction: column;
+    }
+
+}
+
+@media (max-width:800px) {
+    .navbar_info {
+        margin-left: 45px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .navbar_info2 {
+        margin-left: 45px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .navbar_info3 {
+        margin-left: 45px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .navbar_info4 {
+        margin-left: 45px;
+    }
+
+}
+
+@media (max-width:800px) {
+    .navbar_info5 {
+        margin-left: 45px;
+    }
+
+}
+
+.language {
+    color: white;
+    display: block;
+    margin-block-start: 1.4em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.avatar {
+    color: white;
+    display: block;
+    margin-block-start: 1.4em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+
+}
+
+.english {
+    color: white;
+}
+
+.icon {
+    color: white;
+    /* height: 67%; */
+    display: block;
+    /* width: 63%; */
+    margin-block-start: 1.4em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+@media (max-width:900px) {
+    .button {
+        margin-left: 43px;
+        width: 50%;
+        height: 50%;
+    }
+
+}
+
+
+@media (max-width:900px) {
+    .avatar {
+        display: none;
+    }
+
+}
+
+@media (max-width:900px) {
+    .english {
+        display: none;
+    }
+
+}
+
+@media (max-width:900px) {
+    .language {
+        display: none;
+    }
+
+}
+
+@media (max-width:900px) {
+    .icon {
+        display: none;
+    }
+
+}
+
+.downarrow {
+    color: white;
+}
+
+.shoot {
+    color: white;
+}
+.modal,.overlay{
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: fixed;
+}
+.overlay{
+    background: rgba(49,49,49,0.8);
+}
+.modal-content{
+    position: absolute;
+    top: 26%;
+    left: 87%;
+    transform: translate(-50%,-50%);
+    line-height: 1.4;
+    background: #f1f1f1;
+    padding: 14px 28px;
+    border-radius: 3px;
+    /* max-width: 600px; */
+    min-width: 195px;
+    background-color: #232F3E;
+color: white;
+font-size: large;
+}
+.close-modal{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    padding: 5px 7px;
+}
+.modal-content2{
+    position: absolute;
+    top: 16%;
+    left: 83%;
+    transform: translate(-50%,-50%);
+    /* line-height: 1.4; */
+    background: #f1f1f1;
+    height: 37px;
+    /* padding: 14px 28px; */
+    border-radius: 3px;
+    max-width: 600px;
+    min-width: 199px;
+    background-color: #232F3E;
+    /* color: white; */
+    /* font-size: large; */
+    display: flex;
+    flex-direction: row;
+}
+
+.search{
+    color: white;
+    position: relative;
+    top: 7px;
+}
+.input{
+    background-color: #232F3E;
+    border-bottom: none;
+    border-color: none;
+    color: white;
+}
