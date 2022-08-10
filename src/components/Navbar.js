@@ -7,17 +7,10 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import CloseIcon from '@mui/icons-material/Close';
 import Image1 from './images/Screenshot (121).png';
 import Image2 from './images/ok3.jpg';
-import Image3 from "./images/Screenshot (130).png";
+import Image3 from "./images/Screenshot (132).png";
+import Image4 from "./images/Screenshot (135).png";
+import MenuIcon from '@mui/icons-material/Menu';
 
-
-import Image11 from './images/s1.jpg';
-import Image32 from './images/un3.jpg';
-import Image4 from './images/y1.jpg';
-import Image5 from './images/incredibles2.jpg';
-import Image6 from './images/Soorarai-Pottru-suriya1.jpg';
-import Image7 from './images/dr strange3.jpg';
-import Image8 from './images/abd2.jpg';
-import Image9 from './images/fast2.jpg';
 
 function Navbar() {
   const [modal, setModal] = useState(false);
@@ -33,6 +26,10 @@ function Navbar() {
   const [icon, setIcon] = useState(false);
   const toggleIcon = () => {
     setIcon(!icon)
+  }
+  const [menu, setMenu] = useState(false);
+  const toggleMenu = () => {
+    setMenu(!menu)
   }
 
 
@@ -59,7 +56,12 @@ function Navbar() {
         </div>
         <div className='navbar_info6'>
           <button className='button'>Try for free</button>
-        </div>
+        </div>  
+
+
+
+
+
         <div onClick={toggleIcon} className='icon'>
           <SearchIcon />
         </div>
@@ -74,6 +76,11 @@ function Navbar() {
             </div>
           </div>
         )}
+
+
+
+
+
         <div onClick={toggleLang} className='language'>
           <LanguageIcon />
           <ArrowDropDownIcon />
@@ -90,9 +97,14 @@ function Navbar() {
             </div>
           </div>
         )}
+
+
         <div className='english'>
           <h4>EN</h4>
         </div>
+
+
+
         <div onClick={toggleModal} className='avatar'>
           <AccountCircleIcon />
           <ArrowDropDownIcon />
@@ -109,6 +121,33 @@ function Navbar() {
             </div>
           </div>
         )}
+
+
+
+
+<div onClick={toggleMenu} className='menu'>
+  <MenuIcon className='menu6'/>
+</div>
+{menu && (
+          <div className='modal'>
+            <div onClick={toggleMenu} className='overlay'></div>
+            <div className='modal-content4'>
+             <p>Home</p>
+             <p>Store</p>
+             <p>Channels</p>
+             <p>Categories</p>
+             <p>My stuff</p>
+
+              <CloseIcon className='close-modal4' onClick={toggleMenu}></CloseIcon>
+              {/* <button className='close-modal' onClick={toggleModal}>Close</button> */}
+            </div>
+          </div>
+        )}
+
+
+
+
+
       </div>
       <div className='front_page'>
         <img src={Image1} alt="" className='img1'></img>
@@ -139,8 +178,8 @@ function Navbar() {
             <button className='button1' > Rent Now</button>
           </div>
         </div>
-        </div>
-        <div className='your_chanel'>
+      </div>
+      <div className='your_chanel'>
         <div className='fav'>
           <h1 className='fav1'>Your favorite channels all in one place</h1  >
           <h1 className='fav2'>With Prime Video Channels, find shows and movies from your favorite channels all in one place. Enjoy with an add-on subscription to Channels of your choice</h1>
@@ -174,12 +213,42 @@ function Navbar() {
             <p className='b9'>hayu!!</p>
           </button>
         </div>
-        </div>
-        <div className='remote'>
+      </div>
+      <div className='remote'>
+
         <img src={Image3} alt="" className='img3'></img>
+        <div className='tv1'>
+          <h1 className='tv'>Even better with Fire TV Stick</h1>
+          <p className='tv2'>The biggest movies and TV shows are always better on a big screen. Simply plug in your Amazon Fire TV Stick and stream on any HDTV. Press the voice button on the remote and say the name of the title you want to watch to find it in seconds.    </p>
+          <button className='button3'>Get started</button>
 
         </div>
-      
+
+      </div>
+      <div className='remote2'>
+        <div className='tv4'>
+          <h1 className='tv'>Family Friendly</h1>
+          <p className='tv2'>With easy to use Parental Controls and a dedicated kids page, enjoy secure, ad-free kids entertainment. Kids can enjoy popular TV shows like Peppa Pig, Powerpuff Girls, and Chhota Bheem.</p>
+          <button className='button3'>Get started</button>
+        </div>
+
+        <img src={Image4} alt="" className='img4'></img>
+
+      </div>
+      <div className='footer'>
+        <div className='logo1'>
+          <h1>prime video</h1>
+        </div>
+        <div className='footer1'>
+          <div className='footer_sub'>
+            <p >Terms and Privacy Notice Send us feedbackHelp</p>
+          </div>
+          <div>
+            <p className='footer_sub2'>© 1996-2022, Amazon.com, Inc. or its affiliates</p></div>
+        </div>
+      </div>
+
+
     </div>
   )
 }
