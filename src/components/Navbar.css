@@ -2,7 +2,7 @@
     background-color: #232F3E;
     /* background-color:  #212d4a; */
     margin: 0;
-    padding: 1px;
+    /* padding: 1px; */
     width: 100% !important;
     height: 100% !important;
     display: flex;
@@ -524,7 +524,7 @@ width: 257%;
         grid-gap: 20px;
       justify-content: space-around;
       align-content: center;
-
+      margin-left: 76px;
     }
 
 }
@@ -609,6 +609,7 @@ width: 257%;
 .remote2{
     display: flex;
     flex-direction: row;
+    /* margin-bottom: 0px; */
     background-color: black;
 }
 @media (max-width:900px) {
@@ -673,6 +674,9 @@ width: 257%;
     .footer{
        position: absolute;
        margin-top: 665px;
+       padding: 0;
+       /* margin-top: 693px; */
+    width: 100%;
     }
 
 }
@@ -688,12 +692,12 @@ width: 257%;
     }
 
 }
-.menu{
+.menu6{
     color: white;
     display: none;
 }
 @media (max-width:800px) {
-    .menu{
+    .menu6{
         color: white;
         /* display: none; */
     }
@@ -703,14 +707,14 @@ width: 257%;
     .menu6{
       position: absolute;
       top: 24px;
-      left: 535px;
+      left: 545px;
     }
 
 }
 .modal-content4 {
     position: absolute;
     top: 30%;
-    left: 88%;
+    left: 82%;
     transform: translate(-50%, -50%);
     line-height: 1.4;
     background: #f1f1f1;
@@ -725,6 +729,6 @@ width: 257%;
         position: absolute;
         top: 19px;
         /* right: 10px; */
-        left: 516px;
+        left: 550px;
         padding: 5px 7px
     }
